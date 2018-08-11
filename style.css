@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    /* margin:0 auto; */
+ }
+ body{
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/ignasi_pattern_s.png");     
+ }
+ .container{
+     max-width: 960px;
+     margin:0 auto;
+     padding:0 auto;
+ }
+ .header{
+     position:fixed;
+     display: inline-block;
+     width:100%;
+     color:#ffffff;
+     border-bottom: 4px solid #cccccc;
+     height:90px;
+     margin-bottom:30px;
+     background-color:#ffffff;
+     margin-top:0;
+     z-index: 1;
+ }
+ .header-name{
+     box-sizing: content-box;
+     float:left;
+     height:50px;
+     text-align: center;
+     line-height: 2;
+     padding:10px;
+     display:inline-block;  
+     background-color: #4aaaa5;
+     color: #ffffff;
+     font-family:'georgia', 'Times New Roman', Times, serif;
+     margin-bottom:0;
+     margin-left:0;
+     margin-top:16px;
+     font-size:25px;
+ }
+ .nav{
+     box-sizing: content-box;
+     float:right;
+     text-decoration:none;
+     color:#777777;
+     font-size:25px;
+     padding:10px;
+     margin-top:22px;
+     /* font-family:'georgia', 'Times New Roman', Times, serif; */
+ }
+ .nav a{
+     text-decoration:none;
+     color:#777777;  
+ }
+ .cf{
+     clear: both;
+     overflow: auto;
+   }
+   
+   .bio{
+     box-sizing: border-box;
+     position: relative;
+     max-width:960px;
+     padding:15px;
+     padding-top:5px;
+     /* margin-left:auto;
+     margin-right:auto; */
+     margin-top: 100px;
+     margin-bottom:0;
+     background-color: #ffffff;
+     border:4px solid #cccccc;
+     font-size: 17px;
+     line-height: 1.5;
+     color:#777777; 
+     font-family: arial, helvetica neue, helvetica, sans-serif;
+     overflow:auto;
+     z-index:auto;
+    }
+p a {
+    color:#008080;
+}
+   .about{
+     color:#4aaaa5;
+     font-family: 'georgia', 'Times New Roman', Times, serif;
+     font-size: 25px;
+     /* position: absolute; */
+     /* margin-top:25px; */
+     
+   }
+   .hr{
+     color:#cccccc;
+     margin:0;
+     padding:0;
+ }
+ .image{
+     height: 210px;
+     width:150px;
+     float:left;
+     /* padding:15px; */
+     margin-top:8px;
+     margin-right: 5px;
+     margin-bottom:3px;
+     display:inline;
+ }
+ .site-footer{
+         position:fixed;
+         bottom:0px;
+         background-color:#666666;
+         border-top: 4px solid #008080;
+         width: 100%;
+         height:30px;
+ }
+form{
+    font-size: 17px;
+    line-height: 1.5;
+    color:#777777;
+    font-family: arial, helvetica neue, helvetica, sans-serif;
+ }
+input[type=text]{
+     width:100%;
+ }
+ input[type=email]{
+     width:100%;
+ }
+textarea{
+     width:100%;
+     height:150px;
+ }
+ul{
+    list-style: none;
+    position: absolute;
+}
+li {
+    float: left;
+    width: 74%;
+    padding: 10px;
+}
+/* portfolio page */
+
+.project {
+    position: relative;
+    float: left;
+    max-width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+.project {
+    margin-right: 10px;
+  }
+  
+  .project img{
+    width: 100%;
+    height: 205px;
+    border: 0 none;
+    opacity: 0.8;
+    position: relative;
+  }
+  
+  .h3 {
+    position: absolute;
+    bottom: 15px;
+    width: 274px;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+
+
+  /* Container Widths at 640-down */
+@media screen and (max-width: 640px) {
+
+/* change color of background when we reach that particular size */
+    /* @keyframes example{
+        0% {background-color: #feffff;}
+        25% {background-color: #def2f1;}
+        50% {background-color: #94f3ee;}
+        75% {background-color: #6ee4de;}
+        100% {background-color: #54cfc9;}
+    } */
+
+
+
+    .btn {
+        color: #feffff;
+        padding: 10px 16px;
+        font-size: 18px;
+        font-family: Helvetica, Arial, sans-serif;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        background:none;
+    }
+
+    .project {
+        float: none;
+        height: 100%;
+        width: 100%;
+    }
+
+/* Stop floating my profile picture so that it will come in the middle & take the whole row
+We might have to use position relative if it doesn't work. */
+    .image{
+        position: relative;
+        float: none;
+    }
+
+
+/* what will happen if my screen will shrink */
+	.container {
+        width: 100%;
+        max-width: 640px;
+        overflow-y: scroll;
+        position: relative;
+        padding-bottom: 100px;
+        background-color: #3aafa9;
+        /* animation-name: example; just animation for changing color when it reaches that particular size
+        animation-duration: 4s; */
+    }
+	.header {
+		width: 100%;
+		max-width: 640px;
+        position: static;
+		margin-bottom: 20px;
+
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+	.header {
+		width: 100%;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.header-name {
+		width: 100%;
+        /* max-width: 640px;   */
+		clear: both;
+		text-align: center;
+        float: none;
+        border: none;
+        background:none;
+        /* border: 2px solid #2b7A78; */
+        padding-top: 5px;
+    }
+    h2{
+        text-align: center;
+    }
+	nav {
+		width: 100%;
+		max-width: 640px;
+		float: none;
+		clear: both;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+	}
+	nav a {
+		padding-left: 0;
+		margin-left: 0;
+		padding: 0 20px;
+	}
+	h1 {
+		text-align: center;
+		font-size: 25px;
+    }
+    .container{
+        max-width: 640px;
+        margin: 0 auto;
+        min-height: 100vh;
+        background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/ignasi_pattern_s.png"); 
+
+    }
+	.bio {
+        padding-top: 0%;
+		width: 100%;
+		max-width: 600px;
+		margin: 0px auto;
+		float: none;
+		overflow: auto;
+	}
+}
